@@ -61,7 +61,7 @@ Auteur
 
 Michelena Peyo
 Étudiant en BUT Informatique
-Email : pmichelen001@iutbayonne.univ-pau.fr
+Email : peyo.michelena1@gmail.com
 
 GitHub : https://github.com/Peyo001
 
