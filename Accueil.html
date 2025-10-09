@@ -213,7 +213,7 @@
                     <span class="badge bg-info"><i class="fab fa-js-square me-1"></i>JavaScript</span>
                     <span class="badge bg-secondary"><i class="fab fa-bootstrap me-1"></i>Bootstrap</span>
                   </div>
-                  <a href="https://github.com/Peyo001" class="btn btn-outline-primary btn-sm"><i class="fab fa-github me-1"></i>View Project</a>
+                  <a href="https://github.com/Peyo001/Portofolio" class="btn btn-outline-primary btn-sm"><i class="fab fa-github me-1"></i>View Project</a>
                 </div>
               </div>
             </div>
@@ -226,8 +226,10 @@
                     This project was developed as part of my studies to showcase my ability to design a complete web application, including the user experience, features, and business model of the application.</p>
                   <div class="d-flex flex-wrap justify-content-center gap-1 mb-2">
                     <span class="badge bg-primary"><i class="fas fa-users me-1"></i>Project management</span>
+                    <span class="badge bg-primary"><i class="fas fa-users me-1"></i>Teamwork</span>
+                    <span class="badge bg-primary"><i class="fas fa-cuttlefish me-1"></i>Adaptability</span>
                   </div>
-                  <a href="https://github.com/Peyo001" class="btn btn-outline-primary btn-sm"><i class="fab fa-phone me-1"></i>View Project</a>
+                  <a href="" class="btn btn-outline-primary btn-sm"><i class="fab fa me-1"></i>View Project</a>
                 </div>
               </div>
             </div>
@@ -294,10 +296,10 @@ if (localStorage.getItem('darkMode') === 'true') {
   document.body.classList.add('dark-mode');
   document.getElementById('darkModeIcon').textContent = '☀️';
 }
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+document.querySelectorAll('[data-scroll-to]').forEach(el => {
+  el.addEventListener('click', function (e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const target = document.querySelector(this.getAttribute('data-scroll-to'));
     if (target) {
       target.scrollIntoView({
         behavior: 'smooth',
