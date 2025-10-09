@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Computer Science Student</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="mainHeader" class="text-white text-center py-5">
+  <div class="header-content">
+    <h1 class="display-4">Michelena Peyo</h1>
+    <p class="lead">Computer Science Student – BUT Informatique</p>
+  </div>
+</header>
+
+<nav class="navbar navbar-bg-body-tertiary navbar-dark bg-dark sticky-top">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <div class="d-flex align-items-center">
+      <button class="btn btn-outline-light btn-sm me-2" id="darkModeToggle">
+        <span id="darkModeIcon">🌙</span>
+      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="about" class="container py-5">
+  <h2 class="mb-4">About Me</h2>
+  <p>I am a second-year Bachelor student in Computer Science (BUT2).</p>
+  <div class="text-center my-4">
+    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#cvModal">
+      📄 View My CV
+    </button>
+  </div>
+</section>
+
+<section id="cv" class="container py-5">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <div class="btn-group" role="group">
+      <a href="cv.pdf" download class="btn btn-outline-primary"><span class="me-1">⬇️</span>Download</a>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <aside class="col-12 col-lg-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <div class="rounded-circle bg-primary d-inline-flex align-items-center justify-content-center text-white" style="width:64px;height:64px;font-weight:700;">MP</div>
+            <div class="ms-3">
+              <h5 class="card-title mb-0">Michelena Peyo</h5>
+              <small class="text-muted">Computer Science Student</small>
+            </div>
+          </div>
+          <p class="mb-3">Hi! I’m a computer science student who loves web development and programming in general. I enjoy learning new technologies and make somes projects.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0 d-flex align-items-center">
+              <i class="fas fa-map-marker-alt me-2 text-primary"></i> 3473 Avenue du Quartier Neuf, 40390 Saint Martin de Seignanx
+            </li>
+            <li class="list-group-item px-0 d-flex align-items-center">
+              <i class="fas fa-envelope me-2 text-primary"></i> <a href="mailto:pmichelen001@iutbayonne.univ-pau.fr">pmichelen001@iutbayonne.univ-pau.fr</a>
+            </li>
+            <li class="list-group-item px-0 d-flex align-items-center">
+              <i class="fas fa-phone me-2 text-primary"></i> <a href="tel:+33647158910">+33 6 47 15 89 10</a>
+            </li>
+            <li class="list-group-item px-0 d-flex align-items-center">
+              <i class="fab fa-github me-2 text-primary"></i> <a href="https://github.com/Peyo001" target="_blank">github.com/Peyo001</a>
+            </li>
+            <li class="list-group-item px-0 d-flex align-items-center">
+              <i class="fab fa-linkedin me-2 text-primary"></i> <a href="http://linkedin.com/in/peyo-michelena/" target="_blank">linkedin.com/in/peyo-michelena</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mt-4">
+        <div class="card-body">
+          <h6 class="text-uppercase text-muted">Core Skills</h6>
+          <div class="mt-3 d-flex flex-wrap gap-2">
+            <span class="badge bg-primary"><i class="fab fa-cuttlefish me-1"></i>C</span>
+            <span class="badge bg-primary"><i class="fab fa-cuttlefish me-1"></i>C++</span>
+            <span class="badge bg-success"><i class="fab fa-java me-1"></i>Java</span>
+            <span class="badge bg-warning text-dark"><i class="fab fa-python me-1"></i>Python</span>
+            <span class="badge bg-info text-dark"><i class="fab fa-js-square me-1"></i>JavaScript</span>
+            <span class="badge bg-secondary"><i class="fab fa-php me-1"></i>PHP</span>
+            <span class="badge bg-danger"><i class="fab fa-html5 me-1"></i>HTML/CSS</span>
+            <span class="badge bg-info"><i class="fas fa-database me-1"></i>SQL</span>
+            <span class="badge bg-dark"><i class="fab fa-git-alt me-1"></i>Git</span>
+            <span class="badge badge-office-tools"><i class="fas fa-tools me-1"></i>Office Tools</span>
+            <span class="badge bg-warning"><i class="fas fa-users me-1"></i>Project management</span>
+            <span class="badge bg-success"><i class="fas fa-users me-1"></i>Teamwork</span>
+            <span class="badge bg-warning"><i class="fas fa-cuttlefish me-1"></i>adaptability</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mt-4">
+        <div class="card-body">
+          <h6 class="text-uppercase text-muted">Languages</h6>
+          <div class="mt-2 d-flex flex-wrap gap-2">
+            <span class="badge bg-success"><i class="fas fa-flag me-1"></i>French (native)</span>
+            <span class="badge bg-primary"><i class="fas fa-flag me-1"></i>English (B2)</span>
+            <span class="badge bg-secondary"><i class="fas fa-flag me-1"></i>Spanish (A2)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mt-4">
+        <div class="card-body">
+          <h6 class="text-uppercase text-muted">Interests</h6>
+          <ul class="mb-0">
+            <li><i class="fas fa-basketball-ball me-2 text-primary"></i>Sports: basketball and football (club and occasional practice)</li>
+            <li><i class="fas fa-gamepad me-2 text-primary"></i>Video games with friends online</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <div class="col-12 col-lg-8">
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h5 class="mb-3">Profile</h5>
+          <p class="mb-0">BUT Informatique student focused on algorithms, data structures, and modern web development. I enjoy solving complex problems and turning ideas into products.</p>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h5 class="mb-3">Experience</h5>
+          <ul class="mb-0 ps-3 border-start">
+            <li class="mb-3">
+              <div class="d-flex justify-content-between"><strong>Seasonal worker – EARL LAMAYSOUETTE</strong><small class="text-muted">2023</small></div>
+            </li>
+            <li class="mb-3">
+              <div class="d-flex justify-content-between"><strong>Intern – Flashcompo</strong><small class="text-muted">2017 - 2018</small></div>
+              <small class="text-muted">Web design & digital marketing</small>
+              <div>- Discovered teamwork and business environment; assisted on tasks.</div>
+            </li>
+            <li>
+              <div class="d-flex justify-content-between"><strong>Retail team member – Carrefour</strong><small class="text-muted">During school year</small></div>
+              <small class="text-muted">Customer service & operations</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h5 class="mb-3">Education</h5>
+          <ul class="mb-0 ps-3 border-start">
+            <li class="mb-2">
+              <div class="d-flex justify-content-between"><strong>BUT Informatique</strong><small class="text-muted">2025 - Present</small></div>
+              <small class="text-muted">Université de Bayonne et Pays Basque</small>
+              <div>French diploma of higher education in Computer Science (programming, algorithms, databases, web).</div>
+            </li>
+            <li>
+              <div class="d-flex justify-content-between"><strong>General Baccalaureate</strong><small class="text-muted">2021 - 2024</small></div>
+              <small class="text-muted">Lycée Largenté</small>
+              <div>Specialization: computer science and programming.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h5 class="mb-3">Technical Proficiency</h5>
+          <div class="row g-4" id="skills-circles">
+            <div class="col-6 col-md-3 text-center">
+              <div class="c-circle mx-auto" style="--p:0.70; --c:#0d6efd;"><span class="c-val">70%</span></div>
+              <div class="mt-2"><small>C++</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="c-circle mx-auto" style="--p:0.75; --c:#0d6efd;"><span class="c-val">75%</span></div>
+              <div class="mt-2"><small>HTML/</br>CSS</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="c-circle mx-auto" style="--p:0.65; --c:#0dcaf0;"><span class="c-val">65%</span></div>
+              <div class="mt-2"><small>SQL</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="c-circle mx-auto" style="--p:0.60; --c:#0dcaf0;"><span class="c-val">75%</span></div>
+              <div class="mt-2"><small>Python</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="mb-3">Projects</h5>
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <div class="card border-0 bg-light project-card">
+                <div class="card-body text-center py-4">
+                  <i class="fas fa-code fa-2x text-primary mb-3"></i>
+                  <h6 class="card-title">Portfolio Website</h6>
+                  <p class="card-text text-muted small">Responsive portfolio with dark mode, animations and interactive elements</p>
+                  <div class="d-flex flex-wrap justify-content-center gap-1 mb-2">
+                    <span class="badge bg-primary"><i class="fab fa-html5 me-1"></i>HTML/CSS</span>
+                    <span class="badge bg-info"><i class="fab fa-js-square me-1"></i>JavaScript</span>
+                    <span class="badge bg-secondary"><i class="fab fa-bootstrap me-1"></i>Bootstrap</span>
+                  </div>
+                  <a href="https://github.com/Peyo001" class="btn btn-outline-primary btn-sm"><i class="fab fa-github me-1"></i>View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card border-0 bg-light">
+                <div class="card-body text-center py-4">
+                  <i class="fas fa-users fa-2x text-primary mb-3"></i>
+                  <h6 class="card-title ">Creation of a fictional web application to allow people to share and discover music </h6>
+                  <p class="card-text text-muted small">SoundRise is a fictional web application designed to bring music lovers and creators together in a modern, interactive, community-focused space. It allows users to upload, share, stream, and discuss music, while discovering new artists and tracks selected by the community.
+                    This project was developed as part of my studies to showcase my ability to design a complete web application, including the user experience, features, and business model of the application.</p>
+                  <div class="d-flex flex-wrap justify-content-center gap-1 mb-2">
+                    <span class="badge bg-primary"><i class="fas fa-users me-1"></i>Project management</span>
+                  </div>
+                  <a href="https://github.com/Peyo001" class="btn btn-outline-primary btn-sm"><i class="fab fa-phone me-1"></i>View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card border-0 bg-light">
+                <div class="card-body text-center py-4">
+                  <h6 class="card-title text-muted">Project 3</h6>
+                  <p class="card-text text-muted small">Add your project description here</p>
+                  <div class="d-flex flex-wrap justify-content-center gap-1 mb-2">
+                    <span class="badge bg-primary">Technology</span>
+                    <span class="badge bg-secondary">Framework</span>
+                  </div>
+                  <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card border-0 bg-light">
+                <div class="card-body text-center py-4">
+                  <h6 class="card-title text-muted">Project 4</h6>
+                  <p class="card-text text-muted small">Add your project description here</p>
+                  <div class="d-flex flex-wrap justify-content-center gap-1 mb-2">
+                    <span class="badge bg-primary">Technology</span>
+                    <span class="badge bg-secondary">Framework</span>
+                  </div>
+                  <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cvModalLabel">CV Preview</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <iframe src="cv.pdf" class="w-100 cv-frame" title="CV PDF"></iframe>
+      </div>
+      <div class="modal-footer">
+        <a href="cv.pdf" download class="btn btn-outline-primary">Download</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script>
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+  const icon = document.getElementById('darkModeIcon');
+  icon.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+});
+if (localStorage.getItem('darkMode') === 'true') {
+  document.body.classList.add('dark-mode');
+  document.getElementById('darkModeIcon').textContent = '☀️';
+}
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
