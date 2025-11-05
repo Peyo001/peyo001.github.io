@@ -1,95 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project 4 – CD Player with Qt</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Projet 4 – Lecteur CD (Qt)</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  crossorigin="anonymous"
+/>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header id="mainHeader" class="text-white text-center py-5 bg-primary">
+  <header id="mainHeader" class="text-white text-center py-5">
     <div class="header-content">
       <h1 class="display-4">Michelena Peyo</h1>
-      <p class="lead">Computer Science Student – BUT Informatique</p>
+  <p class="lead">Étudiant en Informatique – BUT Informatique</p>
     </div>
   </header>
 
-  <nav class="navbar navbar-dark bg-dark sticky-top">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a class="navbar-brand" href="index.html"><i class="fas fa-arrow-left me-2"></i>Back to Portfolio</a>
-      <button class="btn btn-outline-light btn-sm" id="darkModeToggle">
-        <span id="darkModeIcon">🌙</span>
-      </button>
+  <nav class="navbar bg-dark">
+    <div class="container">
+  <a class="navbar-brand text-white" href="index.html">Retour au portfolio</a>
     </div>
   </nav>
 
   <section class="container py-5">
-    <h2 class="mb-4">Project 4: CD Player with Qt and C++</h2>
-    <p class="lead">A desktop application developed using the Qt framework that simulates a functional CD player with basic media controls.</p>
+  <h2 class="mb-4">Projet : Lecteur CD (Qt)</h2>
+  <p class="lead">Application de bureau développée avec le framework Qt simulant un lecteur CD avec des contrôles multimédia basiques.</p>
 
     <div class="mb-4">
       <h4>Description</h4>
       <p>
-        This project demonstrates how to create a simple graphical CD player using Qt in C++. The application allows users to:
+        Ce projet illustre la création d'un lecteur CD graphique simple avec Qt en C++. L'application permet de :
         <ul>
-          <li>Load and play audio tracks (e.g. MP3, WAV)</li>
-          <li>Pause, resume, stop playback</li>
-          <li>Navigate between tracks using Next/Previous buttons</li>
-          <li>Display current track title and playback progress</li>
+          <li>Charger et lire des pistes audio (ex. MP3, WAV)</li>
+          <li>Mettre en pause, reprendre et arrêter la lecture</li>
+          <li>Naviguer entre les pistes avec les boutons Suivant/Précédent</li>
+          <li>Afficher le titre de la piste en cours et la progression de lecture</li>
         </ul>
-        It was built as part of my coursework to deepen my understanding of GUI development, event handling, and multimedia integration in C++ using Qt.
+        Il a été réalisé dans le cadre de mes travaux pour approfondir le développement d'interfaces, la gestion d'événements et l'intégration multimédia en C++ avec Qt.
       </p>
     </div>
 
     <div class="mb-4">
-      <h4>Technologies Used</h4>
-      <div class="d-flex flex-wrap gap-2">
-        <span class="badge bg-primary"><i class="fab fa-cuttlefish me-1"></i>C++</span>
-        <span class="badge bg-danger"><i class="fas fa-tv me-1"></i>Qt Framework</span>
-        <span class="badge bg-success"><i class="fas fa-music me-1"></i>Multimedia (QMediaPlayer)</span>
-        <span class="badge bg-secondary"><i class="fas fa-desktop me-1"></i>GUI Design</span>
-      </div>
-    </div>
-
-    <div class="mb-4">
-      <h4>Features</h4>
+      <h4>Technologies utilisées</h4>
       <ul>
-        <li>Responsive user interface with Qt Widgets</li>
-        <li>File dialog to select audio files</li>
-        <li>Custom-designed control buttons (Play, Pause, Stop)</li>
-        <li>Volume and progress sliders</li>
+        <li>C++</li>
+        <li>Framework Qt</li>
+        <li>QMediaPlayer</li>
+        <li>Conception d'interface graphique</li>
       </ul>
     </div>
 
     <div class="mb-4">
-        <h4>Screenshots of the constructor of LecteurCD</h4>
-        <img src="images/code_lecteurCD.png" class="img-fluid rounded" alt="code of constructor of lecteurCD">
+      <h4>Fonctionnalités</h4>
+      <ul>
+        <li>Interface utilisateur avec Qt Widgets</li>
+        <li>Dialogue de sélection de fichiers audio</li>
+        <li>Boutons de contrôle personnalisés (Lecture, Pause, Arrêt)</li>
+        <li>Curseurs de volume et d'avancement</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+        <h4>Capture du constructeur de LecteurCD</h4>
+          <img src="images/code_lecteurCD.png" class="img-fluid rounded" alt="code constructeur LecteurCD">
   
       </div>
 
     <div class="mb-4">
-      <h4>GitHub</h4>
-      <a href="https://github.com/Peyo001/LecteurCD" target="_blank" class="btn btn-outline-dark me-2">
-        <i class="fab fa-github me-1"></i>View on GitHub
-        <a href="index.html" target="_blank" class="btn btn-outline-dark me-2"><i class="fas fa-arrow-left me-1"></i>Back to the portofolio</a>
+  <h4>GitHub</h4>
+  <a href="https://github.com/Peyo001/LecteurCD" target="_blank" class="btn btn-outline-primary me-2">Voir sur GitHub</a>
+  <a href="index.html" target="_blank" class="btn btn-outline-primary me-2">Retour au portfolio</a>
     </div>
   </section>
 
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <script>
-    document.getElementById('darkModeToggle').addEventListener('click', function () {
-      document.body.classList.toggle('dark-mode');
-      const icon = document.getElementById('darkModeIcon');
-      icon.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-    });
-
-    if (localStorage.getItem('darkMode') === 'true') {
-      document.body.classList.add('dark-mode');
-      document.getElementById('darkModeIcon').textContent = '☀️';
-    }
-  </script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  crossorigin="anonymous"
+></script>
+  
 </body>
 </html>

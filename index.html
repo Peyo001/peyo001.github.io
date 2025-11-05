@@ -3,135 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio - Computer Science Student</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Portfolio - Michelena Peyo</title>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <header id="mainHeader" class="text-white text-center">
   <div class="header-content">
-    <div class="header-avatar mb-4">
-      <div class="rounded-circle d-inline-flex align-items-center justify-content-center" style="width:120px;height:120px;font-weight:700;font-size:2.5rem;border:4px solid var(--primary-color);">MP</div>
-    </div>
-    <h1 class="display-3 mb-3 glow" data-i18n="headerTitle">Michelena Peyo</h1>
-    <p class="lead mb-4" data-i18n="headerSubtitle">Computer Science Student – BUT Informatique</p>
-    <div class="header-divider"></div>
+    <h1 class="display-3 mb-3">Michelena Peyo</h1>
+    <p class="lead mb-0">Étudiant en Informatique – BUT Informatique</p>
   </div>
 </header>
 
 <nav class="navbar sticky-top" id="mainNavbar">
-  <div class="container d-flex align-items-center justify-content-between">
-    <a class="navbar-brand" href="#" data-i18n="navPortfolio">Portfolio</a>
-    <div class="d-flex align-items-center">
-      <button class="btn btn-outline-light btn-sm me-2" id="langToggle" title="Change language">
-        <span id="langIcon">🇫🇷</span>
-      </button>
-      <button class="btn btn-outline-light btn-sm me-2" id="darkModeToggle">
-        <span id="darkModeIcon">🌙</span>
-      </button>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <div class="container">
+    <div class="navbar-brand-container">
+      <a class="navbar-brand" href="#">
+        <span class="brand-name">Michelena Peyo</span>
+        <span class="brand-separator">|</span>
+        <span class="brand-title">Portfolio</span>
+      </a>
     </div>
-    <div class="collapse navbar-collapse" id="navContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#about" data-i18n="navAbout">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#cv" data-i18n="navCV">CV</a></li>
-      </ul>
-    </div>
+    <ul class="navbar-nav flex-row gap-3">
+      <li class="nav-item"><a class="nav-link" href="#cv"><i class="fas fa-file-lines me-2"></i>CV</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-2"></i>Contact</a></li>
+    </ul>
   </div>
 </nav>
 
-<section id="about" class="container py-5">
-  <div class="about-content">
-    <h2 class="mb-4" data-i18n="aboutTitle">About Me</h2>
-    <p class="lead" data-i18n="aboutText">I am a second-year Bachelor student in Computer Science (BUT2).</p>
-    <div class="text-center my-4">
-      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#cvModal" data-i18n="viewCV">
-        <i class="fas fa-file-pdf me-2"></i>View My CV
-      </button>
-    </div>
-  </div>
-</section>
-
 <section id="cv" class="container py-5">
-  <div class="d-flex align-items-center justify-content-between mb-4">
-    <div class="btn-group" role="group">
-      <a href="cv.pdf" download class="btn btn-outline-primary"><span class="me-1">⬇️</span><span data-i18n="download">Download</span></a>
-    </div>
-  </div>
-
   <div class="row g-4">
     <aside class="col-12 col-lg-4">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm mb-4">
         <div class="card-body">
-          <div class="d-flex align-items-center mb-3">
-            <div class="rounded-circle bg-primary d-inline-flex align-items-center justify-content-center text-white profile-avatar" style="width:80px;height:80px;font-weight:700;font-size:1.5rem;">MP</div>
-            <div class="ms-3">
-              <h5 class="card-title mb-0">Michelena Peyo</h5>
-              <small class="text-muted" data-i18n="computerScienceStudent">Computer Science Student</small>
-            </div>
+          <h5 class="card-title mb-2">Michelena Peyo</h5>
+          <small class="text-muted d-block mb-2">Étudiant en Informatique</small>
+          <p class="mb-3">Bonjour ! Je suis un étudiant en informatique passionné par le développement web et la programmation. J'aime apprendre de nouvelles technologies et réaliser des projets.</p>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h6 class="text-uppercase text-muted">Compétences principales</h6>
+          <div class="skills-container mt-2">
+            <span class="badge"><i class="fas fa-code me-1"></i>C</span>
+            <span class="badge"><i class="fas fa-code me-1"></i>C++</span>
+            <span class="badge"><i class="fab fa-java me-1"></i>Java</span>
+            <span class="badge"><i class="fab fa-python me-1"></i>Python</span>
+            <span class="badge"><i class="fab fa-js-square me-1"></i>JavaScript</span>
+            <span class="badge"><i class="fab fa-php me-1"></i>PHP</span>
+            <span class="badge"><i class="fab fa-html5 me-1"></i>HTML/CSS</span>
+            <span class="badge"><i class="fas fa-database me-1"></i>SQL</span>
+            <span class="badge"><i class="fab fa-git me-1"></i>Git</span>
+            <span class="badge"><i class="fas fa-file-lines me-1"></i>Bureautique</span>
+            <span class="badge"><i class="fas fa-tasks me-1"></i>Gestion de projet</span>
+            <span class="badge"><i class="fas fa-users me-1"></i>Travail d'équipe</span>
+            <span class="badge"><i class="fas fa-arrows-rotate me-1"></i>Adaptabilité</span>
           </div>
-          <p class="mb-3" data-i18n="profileDescription">Hi! I'm a computer science student who loves web development and programming in general. I enjoy learning new technologies and make somes projects.</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item px-0 d-flex align-items-center">
-              <i class="fas fa-map-marker-alt me-2 text-primary"></i> 3473 Avenue du Quartier Neuf, 40390 Saint Martin de Seignanx
-            </li>
-            <li class="list-group-item px-0 d-flex align-items-center">
-              <i class="fas fa-envelope me-2 text-primary"></i> <a href="mailto:peyo.michelena1@gmail.com">peyo.michelena1@gmail.com</a>
-            </li>
-            <li class="list-group-item px-0 d-flex align-items-center">
-              <i class="fas fa-phone me-2 text-primary"></i> <a href="tel:+33647158910">+33 6 47 15 89 10</a>
-            </li>
-            <li class="list-group-item px-0 d-flex align-items-center">
-              <i class="fab fa-github me-2 text-primary"></i> <a href="https://github.com/Peyo001" target="_blank">github.com/Peyo001</a>
-            </li>
-            <li class="list-group-item px-0 d-flex align-items-center">
-              <i class="fab fa-linkedin me-2 text-primary"></i> <a href="http://linkedin.com/in/peyo-michelena/" target="_blank">linkedin.com/in/peyo-michelena</a>
-            </li>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h6 class="text-uppercase text-muted" data-i18n="languages">Langues</h6>
+          <ul class="mt-2 mb-0 ps-3 regular-list">
+            <li class="badge"><i class="fas fa-flag me-1"></i>Français (natif)</li>
+            <li class="badge"><i class="fas fa-flag me-1"></i>Anglais (B2)</li>
+            <li class="badge"><i class="fas fa-flag me-1"></i>Espagnol (A2)</li>
           </ul>
         </div>
       </div>
 
-      <div class="card shadow-sm mt-4">
+      <div class="card shadow-sm">
         <div class="card-body">
-          <h6 class="text-uppercase text-muted" data-i18n="coreSkills">Core Skills</h6>
-          <div class="mt-3 d-flex flex-wrap gap-2">
-            <span class="badge bg-primary"><i class="fab fa-cuttlefish me-1"></i>C</span>
-            <span class="badge bg-primary"><i class="fab fa-cuttlefish me-1"></i>C++</span>
-            <span class="badge bg-success"><i class="fab fa-java me-1"></i>Java</span>
-            <span class="badge bg-warning text-dark"><i class="fab fa-python me-1"></i>Python</span>
-            <span class="badge bg-info text-dark"><i class="fab fa-js-square me-1"></i>JavaScript</span>
-            <span class="badge bg-secondary"><i class="fab fa-php me-1"></i>PHP</span>
-            <span class="badge bg-danger"><i class="fab fa-html5 me-1"></i>HTML/CSS</span>
-            <span class="badge bg-info"><i class="fas fa-database me-1"></i>SQL</span>
-            <span class="badge bg-dark"><i class="fab fa-git-alt me-1"></i>Git</span>
-            <span class="badge badge-office-tools"><i class="fas fa-tools me-1"></i>Office Tools</span>
-            <span class="badge bg-warning"><i class="fas fa-users me-1"></i>Project management</span>
-            <span class="badge bg-success"><i class="fas fa-users me-1"></i>Teamwork</span>
-            <span class="badge bg-warning"><i class="fas fa-cogs me-1"></i>adaptability</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card shadow-sm mt-4">
-        <div class="card-body">
-          <h6 class="text-uppercase text-muted" data-i18n="languages">Languages</h6>
-          <div class="mt-2 d-flex flex-wrap gap-2">
-            <span class="badge bg-success"><i class="fas fa-flag me-1"></i><span data-i18n="frenchNative">French (native)</span></span>
-            <span class="badge bg-primary"><i class="fas fa-flag me-1"></i><span data-i18n="englishB2">English (B2)</span></span>
-            <span class="badge bg-secondary"><i class="fas fa-flag me-1"></i><span data-i18n="spanishA2">Spanish (A2)</span></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card shadow-sm mt-4">
-        <div class="card-body">
-          <h6 class="text-uppercase text-muted" data-i18n="interests">Interests</h6>
-          <ul class="mb-0">
-            <li><i class="fas fa-basketball-ball me-2 text-primary"></i><span data-i18n="sports">Sports: basketball and football (club and occasional practice)</span></li>
-            <li><i class="fas fa-gamepad me-2 text-primary"></i><span data-i18n="videoGames">Video games with friends online</span></li>
+          <h6 class="text-uppercase text-muted" data-i18n="interests">Centres d'intérêt</h6>
+          <ul class="mb-0 ps-3 regular-list">
+            <li class="badge"><i class="fas fa-basketball-ball me-1"></i>Sports : basketball et football</li>
+            <li class="badge"><i class="fas fa-gamepad me-1"></i>Jeux vidéo en ligne avec des amis</li>
           </ul>
         </div>
       </div>
@@ -140,26 +90,37 @@
     <div class="col-12 col-lg-8">
       <div class="card shadow-sm mb-4">
         <div class="card-body">
-          <h5 class="mb-3" data-i18n="profile">Profile</h5>
-          <p class="mb-0" data-i18n="profileText">BUT Informatique student focused on algorithms, data structures, and modern web development. I enjoy solving complex problems and turning ideas into products.</p>
+          <h5 class="mb-3" data-i18n="profile">À propos de moi</h5>
+          <div class="row mb-4">
+            <div class="col-md-12">
+              <p class="mb-3" data-i18n="profileText">Je suis actuellement en deuxième année de BUT Informatique, passionné par le développement et la programmation. Mon parcours est axé sur les algorithmes, les structures de données et le développement web moderne. J'aime particulièrement résoudre des problèmes complexes et transformer des idées innovantes en produits concrets.</p>
+              <p class="mb-4">Mon objectif est de continuer à développer mes compétences techniques tout en travaillant sur des projets stimulants qui me permettent d'apprendre et de grandir professionnellement.</p>
+              <div class="d-flex gap-3">
+                <a href="cv.pdf" target="_blank" class="btn btn-outline-primary"><i class="fas fa-file-pdf me-2"></i>Voir mon CV complet</a>
+                <a href="cv.pdf" download class="btn btn-outline-primary"><i class="fas fa-download me-1"></i><span data-i18n="download">Télécharger</span></a>
+
+                <a href="#contact" class="btn btn-outline-primary"><i class="fas fa-envelope me-2"></i>Me contacter</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="card shadow-sm mb-4">
         <div class="card-body">
-          <h5 class="mb-3" data-i18n="experience">Experience</h5>
+          <h5 class="mb-3" data-i18n="experience">Expérience</h5>
           <ul class="mb-0 ps-3 border-start">
             <li class="mb-3">
-              <div class="d-flex justify-content-between"><strong data-i18n="seasonalWorker">Seasonal worker – EARL LAMAYSOUETTE</strong><small class="text-muted">2023</small></div>
+                <div class="d-flex justify-content-between"><strong data-i18n="seasonalWorker">Ouvrier saisonnier – EARL LAMAYSOUETTE</strong><small class="text-muted">2023</small></div>
             </li>
             <li class="mb-3">
-              <div class="d-flex justify-content-between"><strong data-i18n="internFlashcompo">Intern – Flashcompo</strong><small class="text-muted">2017 - 2018</small></div>
-              <small class="text-muted" data-i18n="webDesignMarketing">Web design & digital marketing</small>
-              <div>- <span data-i18n="internDescription">Discovered teamwork and business environment; assisted on tasks.</span></div>
+                  <div class="d-flex justify-content-between"><strong data-i18n="internFlashcompo">Stagiaire – Flashcompo</strong><small class="text-muted">2017 - 2018</small></div>
+                  <small class="text-muted" data-i18n="webDesignMarketing">Web design & marketing digital</small>
+                  <div>- <span data-i18n="internDescription">Découverte du travail en équipe et de l'environnement professionnel ; assistance sur différentes tâches.</span></div>
             </li>
             <li>
-              <div class="d-flex justify-content-between"><strong data-i18n="retailMember">Retail team member – Carrefour</strong><small class="text-muted" data-i18n="duringSchoolYear">During school year</small></div>
-              <small class="text-muted" data-i18n="customerService">Customer service & operations</small>
+              <div class="d-flex justify-content-between"><strong data-i18n="retailMember">Membre équipe – Carrefour</strong><small class="text-muted" data-i18n="duringSchoolYear">Pendant l'année scolaire</small></div>
+              <small class="text-muted" data-i18n="customerService">Service client & opérations</small>
             </li>
           </ul>
         </div>
@@ -167,17 +128,17 @@
 
       <div class="card shadow-sm mb-4">
         <div class="card-body">
-          <h5 class="mb-3" data-i18n="education">Education</h5>
+          <h5 class="mb-3" data-i18n="education">Formation</h5>
           <ul class="mb-0 ps-3 border-start">
             <li class="mb-2">
-              <div class="d-flex justify-content-between"><strong data-i18n="butInfo">BUT Informatique</strong><small class="text-muted">2025 - Present</small></div>
+              <div class="d-flex justify-content-between"><strong data-i18n="butInfo">BUT Informatique</strong><small class="text-muted">2025 - Présent</small></div>
               <small class="text-muted">Université de Bayonne et Pays Basque</small>
-              <div data-i18n="butInfoDescription">French diploma of higher education in Computer Science (programming, algorithms, databases, web).</div>
+              <div data-i18n="butInfoDescription">Diplôme universitaire en informatique (programmation, algorithmes, bases de données, web).</div>
             </li>
             <li>
-              <div class="d-flex justify-content-between"><strong data-i18n="generalBaccalaureate">General Baccalaureate</strong><small class="text-muted">2021 - 2024</small></div>
+              <div class="d-flex justify-content-between"><strong data-i18n="generalBaccalaureate">Baccalauréat général</strong><small class="text-muted">2021 - 2024</small></div>
               <small class="text-muted">Lycée Largenté</small>
-              <div data-i18n="specialization">Specialization: computer science and programming.</div>
+              <div data-i18n="specialization">Spécialisation : informatique et programmation.</div>
             </li>
           </ul>
         </div>
@@ -185,23 +146,23 @@
 
       <div class="card shadow-sm mb-4">
         <div class="card-body">
-          <h5 class="mb-3" data-i18n="technicalProficiency">Technical Proficiency</h5>
+          <h5 class="mb-3" data-i18n="technicalProficiency">Niveau de maîtrise</h5>
           <div class="row g-4" id="skills-circles">
             <div class="col-6 col-md-3 text-center">
-              <div class="c-circle mx-auto" style="--p:0.70; --c:#d4af37;"><span class="c-val">70%</span></div>
-              <div class="mt-2"><small>C++</small></div>
+              <div class="c-circle mx-auto" style="--p:0.55; --c:var(--or);"><span class="c-val">55%</span></div>
+              <div class="mt-2"><small><i class="fas fa-code me-1"></i>C++</small></div>
             </div>
             <div class="col-6 col-md-3 text-center">
-              <div class="c-circle mx-auto" style="--p:0.75; --c:#d4af37;"><span class="c-val">75%</span></div>
-              <div class="mt-2"><small>HTML/</br>CSS</small></div>
+              <div class="c-circle mx-auto" style="--p:0.70; --c:var(--or);"><span class="c-val">70%</span></div>
+              <div class="mt-2"><small><i class="fab fa-html5 me-1"></i>HTML/CSS</small></div>
             </div>
             <div class="col-6 col-md-3 text-center">
-              <div class="c-circle mx-auto" style="--p:0.65; --c:#ffd700;"><span class="c-val">65%</span></div>
-              <div class="mt-2"><small>SQL</small></div>
+              <div class="c-circle mx-auto" style="--p:0.80; --c:var(--or);"><span class="c-val">80%</span></div>
+              <div class="mt-2"><small><i class="fas fa-database me-1"></i>SQL</small></div>
             </div>
             <div class="col-6 col-md-3 text-center">
-              <div class="c-circle mx-auto" style="--p:0.60; --c:#ffd700;"><span class="c-val">75%</span></div>
-              <div class="mt-2"><small>Python</small></div>
+              <div class="c-circle mx-auto" style="--p:0.85; --c:var(--or);"><span class="c-val">85%</span></div>
+              <div class="mt-2"><small><i class="fab fa-python me-1"></i>Python</small></div>
             </div>
           </div>
         </div>
@@ -209,7 +170,7 @@
 
       <div class="card shadow-sm">
         <div class="card-body">
-          <h5 class="mb-3" data-i18n="projects">Projects</h5>
+          <h5 class="mb-3" data-i18n="projects">Projets</h5>
           <div class="row g-3">
             <div class="col-12 col-md-6">
               <div class="card border-0 bg-light project-card">
@@ -217,16 +178,16 @@
                   <div class="project-icon mb-3">
                     <i class="fas fa-code fa-3x text-primary"></i>
                   </div>
-                  <h5 class="card-title mb-3" data-i18n="portfolioWebsite">Portfolio Website</h5>
-                  <p class="card-text text-muted mb-3" data-i18n="portfolioDescription">Responsive portfolio with dark mode, animations and interactive elements</p>
+                  <h5 class="card-title mb-3" data-i18n="portfolioWebsite">Site Portfolio</h5>
+                  <p class="card-text text-muted mb-3" data-i18n="portfolioDescription">Portfolio réactif avec mode sombre, animations et éléments interactifs.</p>
                   <div class="d-flex flex-wrap justify-content-center gap-1 mb-3">
                     <span class="badge bg-primary"><i class="fab fa-html5 me-1"></i>HTML/CSS</span>
                     <span class="badge bg-info"><i class="fab fa-js-square me-1"></i>JavaScript</span>
                     <span class="badge bg-secondary"><i class="fab fa-bootstrap me-1"></i>Bootstrap</span>
                   </div>
-                  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal1">
-                    <i class="fas fa-eye me-1"></i><span data-i18n="viewDescription">View Description of Project</span>
-                  </button>                
+                  <a href="projet1.html" class="btn btn-outline-primary btn-sm">
+                    <i class="fas fa-eye me-1"></i><span data-i18n="viewDescription">Voir la description</span>
+                  </a>                
                 </div>
               </div>
             </div>
@@ -236,18 +197,18 @@
                   <div class="project-icon mb-3">
                     <i class="fas fa-users fa-3x text-primary"></i>
                   </div>
-                  <h5 class="card-title mb-3" data-i18n="soundRise">Creation of a fictional web application to allow people to share and discover music</h5>
+                  <h5 class="card-title mb-3" data-i18n="soundRise">SoundRise — Application web fictive pour partager et découvrir de la musique</h5>
                   <p class="card-text text-muted mb-3" data-i18n="soundRiseDescription">
-                    SoundRise is a fictional web app that connects music lovers and creators. Users can upload, share, and discover tracks in a community-driven space.
+                    SoundRise est une application web fictive qui met en relation les amateurs et les créateurs de musique. Les utilisateurs peuvent télécharger, partager et découvrir des morceaux dans un espace communautaire.
                   </p>
                   <div class="d-flex flex-wrap justify-content-center gap-1 mb-3">
-                      <span class="badge bg-primary"><i class="fas fa-users me-1"></i>Teamwork</span>
-                      <span class="badge bg-primary"><i class="fas fa-tasks me-1"></i>Project Management</span>
-                      <span class="badge bg-secondary"><i class="fas fa-lightbulb me-1"></i>UX/UI Design</span>
+                      <span class="badge bg-primary"><i class="fas fa-users me-1"></i>Travail d'équipe</span>
+                      <span class="badge bg-primary"><i class="fas fa-tasks me-1"></i>Gestion de projet</span>
+                      <span class="badge bg-secondary"><i class="fas fa-lightbulb me-1"></i>Design UX/UI</span>
                     </div>
-                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal2">
-                      <i class="fas fa-eye me-1"></i><span data-i18n="viewDescription">View Description of Project</span>
-                    </button>                
+                    <a href="projet2.html" class="btn btn-outline-primary btn-sm">
+                      <i class="fas fa-eye me-1"></i><span data-i18n="viewDescription">Voir la description</span>
+                    </a>                
                   </div>
               </div>
             </div>
@@ -257,9 +218,9 @@
                   <div class="project-icon mb-3">
                     <i class="fas fa-chart-line fa-3x text-primary"></i>
                   </div>
-                  <h5 class="card-title mb-3" data-i18n="dataAnalysis">Data Analysis with Python</h5>
+                  <h5 class="card-title mb-3" data-i18n="dataAnalysis">Analyse de données avec Python</h5>
                   <p class="card-text text-muted mb-3" data-i18n="dataAnalysisDescription">
-                    A Python-based tool to analyze website traffic data using SQL and visualize it with Matplotlib.
+                    Programme Python qui se connecte à une base de données, extrait les données et génère des graphiques pour visualiser les tendances (utilise SQL et Matplotlib).
                   </p>
                   <div class="d-flex flex-wrap justify-content-center gap-1 mb-3">
                     <span class="badge bg-primary"><i class="fab fa-python me-1"></i>Python</span>
@@ -267,9 +228,9 @@
                     <span class="badge bg-danger"><i class="fas fa-plug me-1"></i>ODBC</span>
                     <span class="badge bg-info text-dark"><i class="fas fa-chart-bar me-1"></i>Matplotlib</span>
                   </div>
-                  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal3">
-                    <i class="fas fa-eye me-1"></i><span data-i18n="viewDescription">View Description of Project</span>
-                  </button>
+                  <a href="projet3.html" class="btn btn-outline-primary btn-sm">
+                    <i class="fas fa-eye me-1"></i><span data-i18n="viewDescription">Voir la description</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -279,19 +240,19 @@
                   <div class="project-icon mb-3">
                     <i class="fab fa-cuttlefish fa-3x text-primary"></i>
                   </div>
-                  <h5 class="card-title mb-3" data-i18n="cdPlayer">CD Player with Qt and C++</h5>
+                  <h5 class="card-title mb-3" data-i18n="cdPlayer">Programme C++ (Qt)</h5>
                   <p class="card-text text-muted mb-3" data-i18n="cdPlayerDescription">
-                    A desktop application simulating a CD player, built using the Qt framework and C++. It supports audio playback, track navigation, and real-time progress display.
+                    Programme développé en C++ avec le framework Qt. Il implémente une interface graphique et des fonctions de lecture/gestion de pistes (application de démonstration).
                   </p>
                   <div class="d-flex flex-wrap justify-content-center gap-1 mb-3">
                     <span class="badge bg-primary"><i class="fab fa-cuttlefish me-1"></i>C++</span>
                     <span class="badge bg-danger"><i class="fas fa-tv me-1"></i>Qt</span>
                     <span class="badge bg-info text-dark"><i class="fas fa-music me-1"></i>QMediaPlayer</span>
-                    <span class="badge bg-secondary"><i class="fas fa-desktop me-1"></i>GUI</span>
+                    <span class="badge bg-secondary"><i class="fas fa-desktop me-1"></i>Interface graphique</span>
                   </div>
-                  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal4">
-                    <i class="fas fa-eye me-1"></i><span data-i18n="viewProject">View Project</span>
-                  </button>
+                  <a href="projet4.html" class="btn btn-outline-primary btn-sm">
+                    <i class="fas fa-eye me-1"></i><span data-i18n="viewProject">Voir la description</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -302,191 +263,51 @@
   </div>
 </section>
 
-<div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="cvModalLabel" data-i18n="cvPreview">CV Preview</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-0">
-        <iframe src="cv.pdf" class="w-100 cv-frame" title="CV PDF"></iframe>
-      </div>
-      <div class="modal-footer">
-        <a href="cv.pdf" download class="btn btn-outline-primary"><span data-i18n="download">Download</span></a>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="close">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Projet 1 - Portfolio Website -->
-<div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center">
-          <i class="fas fa-code fa-2x text-primary me-3"></i>
-          <h5 class="modal-title mb-0" id="projectModal1Label" data-i18n="portfolioWebsite">Portfolio Website</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="mb-3">
-          <img src="images/screen_portofolio.png" class="img-fluid rounded mb-3" alt="Portfolio Screenshot" style="max-height: 300px; width: 100%; object-fit: cover;">
-        </div>
-        <p class="mb-3" data-i18n="portfolioDescription">Responsive portfolio with dark mode, animations and interactive elements</p>
-        <h6 class="mb-2">Technologies utilisées :</h6>
-        <div class="d-flex flex-wrap gap-2 mb-3">
-          <span class="badge bg-primary"><i class="fab fa-html5 me-1"></i>HTML/CSS</span>
-          <span class="badge bg-info"><i class="fab fa-js-square me-1"></i>JavaScript</span>
-          <span class="badge bg-secondary"><i class="fab fa-bootstrap me-1"></i>Bootstrap</span>
-        </div>
-        <h6 class="mb-2">Fonctionnalités :</h6>
-        <ul class="mb-0">
-          <li>Design responsive adapté à tous les écrans</li>
-          <li>Mode sombre avec persistance</li>
-          <li>Changement de langue (FR/EN)</li>
-          <li>Animations fluides et transitions</li>
-          <li>Interface moderne avec thème noir et or</li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="close">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Projet 2 - SoundRise -->
-<div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center">
-          <i class="fas fa-users fa-2x text-primary me-3"></i>
-          <h5 class="modal-title mb-0" id="projectModal2Label" data-i18n="soundRise">Creation of a fictional web application to allow people to share and discover music</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="mb-3">
-          <a href="SoundRise.pdf" target="_blank" class="d-block">
-            <img src="images/gant_S2.png" class="img-fluid rounded mb-3" alt="SoundRise Project" style="max-height: 300px; width: 100%; object-fit: cover;">
-          </a>
-        </div>
-        <p class="mb-3" data-i18n="soundRiseDescription">SoundRise is a fictional web app that connects music lovers and creators. Users can upload, share, and discover tracks in a community-driven space. Designed as a school project, it highlights my skills in web design, UX, and feature planning.</p>
-        <h6 class="mb-2">Compétences développées :</h6>
-        <div class="d-flex flex-wrap gap-2 mb-3">
-          <span class="badge bg-primary"><i class="fas fa-users me-1"></i>Teamwork</span>
-          <span class="badge bg-primary"><i class="fas fa-tasks me-1"></i>Project Management</span>
-          <span class="badge bg-secondary"><i class="fas fa-lightbulb me-1"></i>UX/UI Design</span>
-        </div>
-        <h6 class="mb-2">Réalisations :</h6>
-        <ul class="mb-0">
-          <li>Conception de l'architecture de l'application</li>
-          <li>Gestion de projet avec diagramme de Gantt</li>
-          <li>Design d'interface utilisateur moderne</li>
-          <li>Travail en équipe et coordination</li>
-        </ul>
-        <div class="mt-3">
-          <a href="SoundRise.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
-            <i class="fas fa-file-pdf me-1"></i>Voir le document complet
-          </a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="close">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Projet 3 - Data Analysis -->
-<div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center">
-          <i class="fas fa-chart-line fa-2x text-primary me-3"></i>
-          <h5 class="modal-title mb-0" id="projectModal3Label" data-i18n="dataAnalysis">Data Analysis with Python</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="mb-3">
-          <div class="row g-2">
-            <div class="col-6">
-              <img src="images/requete2_deb.png" class="img-fluid rounded" alt="SQL Query Start" style="max-height: 200px; width: 100%; object-fit: cover;">
+<section id="contact" class="container py-5">
+  <div class="card shadow-sm">
+    <div class="card-body text-center">
+      <h2 class="mb-4">Me contacter</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="contact-grid">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+              <h5>Adresse</h5>
+              <p>3473 Avenue du Quartier Neuf<br>40390 Saint Martin de Seignanx</p>
             </div>
-            <div class="col-6">
-              <img src="images/requete2_fin.png" class="img-fluid rounded" alt="SQL Query End" style="max-height: 200px; width: 100%; object-fit: cover;">
+            <div class="contact-item">
+              <i class="fas fa-envelope fa-2x mb-3"></i>
+              <h5>Email</h5>
+              <a href="mailto:peyo.michelena1@gmail.com">peyo.michelena1@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone fa-2x mb-3"></i>
+              <h5>Téléphone</h5>
+              <a href="tel:+33647158910">+33 6 47 15 89 10</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-globe fa-2x mb-3"></i>
+              <h5>Réseaux</h5>
+              <div class="social-links">
+                <a href="https://github.com/Peyo001" target="_blank" class="me-3">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="http://linkedin.com/in/peyo-michelena/" target="_blank">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <p class="mb-3" data-i18n="dataAnalysisDescription">A Python-based tool to analyze website traffic data using SQL and visualize it with Matplotlib.</p>
-        <h6 class="mb-2">Technologies utilisées :</h6>
-        <div class="d-flex flex-wrap gap-2 mb-3">
-          <span class="badge bg-primary"><i class="fab fa-python me-1"></i>Python</span>
-          <span class="badge bg-success"><i class="fas fa-database me-1"></i>SQL</span>
-          <span class="badge bg-danger"><i class="fas fa-plug me-1"></i>ODBC</span>
-          <span class="badge bg-info text-dark"><i class="fas fa-chart-bar me-1"></i>Matplotlib</span>
-        </div>
-        <h6 class="mb-2">Fonctionnalités :</h6>
-        <ul class="mb-0">
-          <li>Connexion à une base de données via ODBC</li>
-          <li>Requêtes SQL complexes pour l'analyse</li>
-          <li>Visualisation des données avec graphiques</li>
-          <li>Analyse de trafic web et statistiques</li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="close">Close</button>
       </div>
     </div>
   </div>
-</div>
-
-<!-- Modal Projet 4 - CD Player -->
-<div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center">
-          <i class="fab fa-cuttlefish fa-2x text-primary me-3"></i>
-          <h5 class="modal-title mb-0" id="projectModal4Label" data-i18n="cdPlayer">CD Player with Qt and C++</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="mb-3">
-          <img src="images/code_lecteurCD.png" class="img-fluid rounded mb-3" alt="CD Player Code" style="max-height: 300px; width: 100%; object-fit: cover;">
-        </div>
-        <p class="mb-3" data-i18n="cdPlayerDescription">A desktop application simulating a CD player, built using the Qt framework and C++. It supports audio playback, track navigation, and real-time progress display.</p>
-        <h6 class="mb-2">Technologies utilisées :</h6>
-        <div class="d-flex flex-wrap gap-2 mb-3">
-          <span class="badge bg-primary"><i class="fab fa-cuttlefish me-1"></i>C++</span>
-          <span class="badge bg-danger"><i class="fas fa-tv me-1"></i>Qt</span>
-          <span class="badge bg-info text-dark"><i class="fas fa-music me-1"></i>QMediaPlayer</span>
-          <span class="badge bg-secondary"><i class="fas fa-desktop me-1"></i>GUI</span>
-        </div>
-        <h6 class="mb-2">Fonctionnalités :</h6>
-        <ul class="mb-0">
-          <li>Interface graphique moderne avec Qt</li>
-          <li>Lecture audio avec QMediaPlayer</li>
-          <li>Navigation entre les pistes</li>
-          <li>Affichage de la progression en temps réel</li>
-          <li>Contrôles de lecture (play, pause, stop)</li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="close">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</section>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
 <script src="script.js"></script>
 </body>
 </html>
