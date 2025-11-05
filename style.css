@@ -90,6 +90,13 @@ p, .lead {
 
 section {
   padding: 2rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  padding-left: max(1rem, calc((100% - 1400px) / 2));
+  padding-right: max(1rem, calc((100% - 1400px) / 2));
 }
 
 .card {
@@ -237,6 +244,24 @@ a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: var(--fond-carte) !important;
   color: var(--texte) !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.row.g-3.justify-content-center {
+  margin: 0;
+  width: 100%;
 }
 
 .project-card:hover {
@@ -259,7 +284,8 @@ a:focus, button:focus {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 1rem;
+  margin: 1rem auto;
+  max-width: 1000px;
 }
 
 .contact-item {
@@ -310,5 +336,16 @@ a:focus, button:focus {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .row {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
